@@ -1,0 +1,16 @@
+.wrap-input {
+  position: relative;
+  input{
+    &.has-icon-right{
+      padding-right: 40px;
+    }
+    &.has-icon-left{
+      padding-left: 40px;
+    }
+  }
+  .icon {
+    //color: rgba(173,173,173,0.5);
+    font-size:24px;
+    @include position-center-icon;
+  }
+}

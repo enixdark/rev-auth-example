@@ -1,0 +1,20 @@
+.signature {
+  text-align: center;
+  padding:72px 0;
+  .image-signature {
+    width: 68%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #979797;
+    background-color: #F9F9F9;
+    p{
+      font-size: 9px;
+      font-weight: 600;
+      line-height: 13px;
+    }
+    img {
+      height: 105px;
+      width: 189px;
+    }
+  }
+}

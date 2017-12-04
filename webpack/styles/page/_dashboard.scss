@@ -1,0 +1,21 @@
+#main {
+  text-align: center;
+}
+.container-custom{
+  width:100%;
+  margin: 0 auto;
+}
+.content-white {
+    text-align: center;
+    width: 100%;
+    background: #f9f9f9;
+    padding-bottom: 30px;
+    padding-top:30px;
+    .content-white-child {
+      background:$white;
+      width: 70%;
+      margin:auto;
+      border-radius: 5PX;
+      border: 1px solid #e8e8e8;
+    }
+  }

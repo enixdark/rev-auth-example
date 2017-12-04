@@ -1,0 +1,82 @@
+.btn-clear{
+  font-size: 15px;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 15px;
+  cursor: pointer;
+  background: transparent;
+}
+.btn-submit-inactive {
+  border: 2px solid $violation;
+  background: #fff;
+  width:70%;
+  border-radius: 12px;
+  font-weight: bold;
+  color:$violation;
+  &:hover {
+    color:$violation;
+    opacity: 0.8;
+    background: $silver;
+  }
+}
+.btn-has-icon {
+  font-weight: bold;
+  font-size: $article;
+  color:$text-color;
+  position: relative;
+  min-width: 238px;
+  padding:10px 12px 10px 17px;
+
+  @include box-shadow;
+  .icon {
+    color:$text-color;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  &.icon-right{
+    padding-right: 30px;
+    text-align: left;
+    .icon{
+      right: 10px;
+      font-size: 20px;
+    }
+  }
+  &.icon-left{
+    padding-left: 30px;
+    text-align: center;
+    .icon{
+      left: 10px;
+      font-size:20px;
+    }
+  }
+}
+.btn-devices {
+  min-width: 185px !important;
+}
+.btn-large{
+  min-height: 41px;
+}
+.btn-insert {
+  padding-top:5px;
+  padding-bottom:5px;
+  font-size:13px;
+}
+.btn-continue,.login .header-logo-driver .nav-login li a:hover,.table-content-driver .table-driver .tr-driver:hover,.btn-add-driver:hover,.btn-search,.dropdown-header-driver .content-dropdown-header .log-out-header:hover,.icon-edit-logs .icon-pen,.daily-log_list-log ul li,.pagination-table-user li a{
+  transition-duration: 0.25s;
+
+}
+.pagination-table-user li a{
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.btn-add-driver:hover,.icon-edit-logs .icon-pen:hover{
+  opacity:0.8;
+}
+.btn-download{
+  font-size:20px;
+  display: block;
+  color: #1D2029;
+}

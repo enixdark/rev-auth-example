@@ -1,0 +1,62 @@
+.semi-bold {
+  font-weight: 600;
+}
+
+.bg-white {
+  background: #fff;
+  border: 1px solid #eee;
+  border-top: none;
+  border-radius: 5px;
+}
+
+.bg-yellow {
+  background: $yellow;
+  padding-left: 3px;
+}
+
+.heading-details {
+  color: rgba(173,173,173,0.75);
+  font-weight: bold;
+  font-size: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.pointer{
+    cursor: pointer;
+}
+.text-table-gray{
+  color: rgba(117,117,113,0.6);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 17px;
+}
+.title-location {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: $title;
+  text-align: left;
+  display: block;
+  overflow: hidden;
+  word-break: break-all;
+  span {
+    font-weight: 500;
+  }
+}
+
+.text-left {
+  float: left;
+}
+
+.font-futura-normal{
+  font-family: Futura-normal;
+}
+.font-futura-probold{
+  font-family: FuturaPRO-Bold;
+}
+.font-futura-pro-extrabold{
+  font-family: FuturaPRO-ExtraBold;
+}
+.font-futura-medium{
+  font-family: FuturaPRO-Medium;
+}

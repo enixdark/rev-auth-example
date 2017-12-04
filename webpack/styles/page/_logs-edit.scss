@@ -1,0 +1,240 @@
+// log edit
+.content-logs-edit{
+  background: $white;
+  padding:10px 10px 30px 10px;
+  border-radius: 3.75px;
+  border: 1px solid rgba(132,141,168,0.15);
+  @include box-shadow;
+  h4 {
+    color: $black;
+    font-size: $address;
+    font-weight: bold;
+  }
+  .title-logs-edit {
+    color: $black;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    margin-top:15px;
+  }
+}
+.list-left-icon {
+  .icon-insert-top {
+    &:hover {
+      span{
+        transform: scale(1.1);
+        transition: all 0.5s;
+      }
+    }
+    margin-top:20px;
+   @include flex-column-center;
+    span {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: $yellow;
+      cursor: pointer;
+      i {
+        font-size:35px;
+        color: $black;
+      }
+      @include flex-center-center;
+    }
+    .title-insert {
+      text-align: center;
+       color: $black;
+       font-size: 11px;
+       font-weight: bold;
+       margin-top: 10px;
+    }
+  }
+  .icon-insert-center {
+    span {
+      background: $red;
+      cursor: pointer;
+      i {
+        font-size:35px;
+        color: $black;
+      }
+    }
+  }
+  .icon-insert-bottom {
+      span {
+        background: $driving;
+        opacity: 0.8;
+        cursor: pointer;
+        i {
+          font-size:28px;
+          color: $black;
+        }
+      }
+    }
+}
+.content-logs-edit-right {
+  .everthing {
+    display: block;
+    overflow: hidden;
+    padding:15px;
+    margin-bottom:30px;
+    background: #fff;
+    border-radius: 5px;
+    margin-left:0;
+    margin-right:0;
+    //@include box-shadow;
+    .alerts-driver-warning {
+      span {
+        background: $yellow !important;
+        i {
+          color:#fff;
+        }
+      }
+      .warning-logs-edit {
+        text-align: left;
+        display: block;
+        overflow: hidden;
+        padding-left:10px;
+        strong {
+          font-weight: 400;
+          font-size:15px;
+          color:#000;
+        }
+      }
+    }
+    .logs-edit-right {
+      margin-top:0;
+      float: right;
+      .status-duty{
+        .status{
+          flex: 2;
+        }
+        .icon{
+          flex: 1;
+          font-size: 18px;
+          margin-left: 5px;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+.content-logs-edit-page {
+  position: relative;
+  border-bottom:none;
+  text-align: left;
+}
+.icon-date-time-picker {
+  width: 25px;
+  height: 25px;
+  background: #fed014;
+  border-radius: 50%;
+  display: block;
+  float: right;
+  position: relative;
+  top: -36px;
+  right: 5px;
+  @include flex-center-center;
+  i{
+    color: $text-color;
+    font-size: 15px;
+  }
+}
+.alerts-logs-event {
+  width: 70%;
+  margin-top:15px;
+}
+.form-clock {
+  //width: 43%;
+  //float: left;
+  .time-icon {
+    font-size: 20px;
+    color: $darkgray20;
+  }
+}
+.form-tag {
+  font-size: 20px;
+  .time-icon {
+    font-size: 20px;
+    color: $darkgray20;
+  }
+}
+.icon-clock-add {
+  float: left;
+  padding:54px 10px 0 10px;
+}
+.changed-to {
+  font-size:9px;
+  color: $black;
+  font-weight:900;
+}
+.text-center-change {
+  text-align: center !important;
+  overflow: hidden;
+}
+.heading-details-modal {
+  font-size: $heading !important;
+}
+.content-daily-log {
+  border:1px solid $darkgray1;
+  padding-left: 30px;
+  padding-top:15px;
+  margin-top:10px;
+  border-radius: 6px;
+  background: $silver;
+}
+// logs
+.top-date-range {
+  margin:auto;
+  overflow: hidden;
+  .date-range {
+    width:25%;
+    margin-top:20px;
+    .icon-range {
+      color:$black;
+      font-size:15px;
+      font-weight: 600;
+    }
+  }
+}
+.form-date-logs {
+  width:20%;
+  text-align: left;
+  float: left;
+  input {
+    height:40px;
+  }
+}
+.icon-date-logs {
+  float: left;
+  padding:54px 20px 0 20px;
+}
+.clear-sort {
+  float: left;
+  display: block;
+  overflow: hidden;
+  margin:42px 0 0 40px;
+  padding:8px 0;
+  .clear {
+    text-decoration: none;
+    color: $black;
+    font-weight:900;
+    font-size:$heading;
+    padding: 7px 20px 7px 20px;
+    border-radius: 4px;
+    margin-right:16px;
+    overflow: hidden;
+    float: left;
+  }
+  .active {
+    background: $yellow;
+  }
+}
+
+// user
+
+.row-email{
+  width:24% !important;
+}
+.alerts-logs-edit {
+  font-size: $sidebar !important;
+  font-weight:600 !important;
+}

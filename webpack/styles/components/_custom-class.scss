@@ -1,0 +1,91 @@
+.blue{
+  color: $blue;
+}
+.white{
+  color: $white;
+}
+.black {
+  color: $text-color !important;
+}
+.purple{
+  color:$sleeper;
+}
+.orange {
+  color: $onduty;
+}
+.green {
+  color: $green;
+}
+.red {
+ color: $red;
+}
+.careful{
+  font-weight: bold;
+  color: $black;
+}
+.icon-page {
+  font-size:20px;
+}
+.btn-red {
+  background: $red;
+}
+.btn-green {
+  background: $green;
+}
+.btn-white {
+  background: $white;
+}
+.btn-yellow {
+  background: $yellow;
+}
+.yellow {
+  color: $yellow;
+}
+.no-border {
+  border:none !important;
+}
+.padding-tab {
+  padding:1px;
+}
+.padding-0 {
+  padding:0;
+}
+.margin-0{
+  margin:0;
+}
+.margin-top-20{
+  margin-top: 20px;
+}
+.no-margin{
+  margin: 0 !important;
+}
+.flex-center{
+  @include flex-center-center
+}
+.flex-row-between{
+  @include flex-row-between;
+}
+.flex-column-between{
+  @include flex-column-between;
+}
+.show {
+  display: block !important;
+}
+.hide {
+  display: none;
+}
+.content-auto {
+  margin:auto;
+}
+.inline-block{
+  display: inline-block;
+}
+.padding-horizontal-15{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

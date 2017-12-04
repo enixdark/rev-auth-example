@@ -1,0 +1,34 @@
+.table-logs{
+  width: 850px;
+  max-width: initial;
+}
+.table-users{
+  width: 640px;
+  max-width: initial;
+}
+.table-drivers{
+  width: 940px;
+  max-width: initial;
+}
+.table-logs-driver{
+  min-width: 640px;
+  max-width: initial;
+}
+.text-table-bold{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+}
+.active-table-logs{
+  width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  .view-date-datalabel{
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+}

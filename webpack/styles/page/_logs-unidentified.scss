@@ -1,0 +1,199 @@
+.logs-page{
+  margin-top: 40px;
+}
+.information-vehicle {
+  /* margin-top: 25px; */
+  padding-top: 25px;
+  overflow: hidden;
+  min-height: 40px;
+  &-title {
+    color: rgba(173, 173, 173, 0.75);
+    font-weight: bold;
+    font-size: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    word-break: break-word;
+    letter-spacing: 1px;
+
+  }
+  &-content{
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    word-break: break-word;
+  }
+
+}
+
+.log-unidentified{
+  .main-content{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background: #f9f9f9;
+    padding-bottom: 30px;
+    padding-top:30px;
+    .bg-white{
+      background: $white;
+      background:$white;
+      margin:auto;
+      border-radius: 5PX;
+      border: 1px solid #e8e8e8;
+    }
+  }
+  .top-content{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .chart{
+    height: 200px;
+  }
+  .heading{
+    font-weight: 600;
+    line-height: 19px;
+    margin: 5px 0;
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+    word-break: break-word;
+    text-align: center;
+  }
+  .daily-log_list-log{
+    padding: 0 25px;
+    margin-top:0;
+    ul{
+      padding: 0;
+      .log-item{
+        cursor: initial;
+        &:hover{
+          background-color: #ffffff;
+          box-shadow: none;
+        }
+        table{
+          table-layout: fixed;
+          td{
+            width: initial;
+          }
+        }
+        .status-time{
+          font-weight: normal;
+          .number{
+            font-weight: 700;
+          }
+        }
+        tbody td{
+          position: relative;
+          vertical-align: top;
+          p{
+            padding-left: 20px;
+            font-weight: 600;
+          }
+          .icon{
+            position: absolute;
+            left: 0;
+            padding-top: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .wrap-table{
+      margin-right: 20%;
+      margin-left: 20%;
+  }
+  .last-driver-table{
+      font-size: 12px;
+      &:first-child{
+        margin-bottom: 3px;
+      }
+      thead tr td{
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 1px solid rgba(151,151,151,0.25) !important;
+        background-color: rgba(173,173,173,0.25);
+        height: 35px;
+        vertical-align: center;
+        &:first-child{
+          border-right: none !important;
+        }
+        &:last-child{
+          border-left: none !important;
+        }
+      }
+      tbody{
+        tr{
+          background: $white;
+          td{
+            text-transform: capitalize;
+            color: $blue;
+            border: 1px solid rgba(151,151,151,0.1);
+            height: 35px;
+            vertical-align: center;
+            &:first-child{
+              border-right: none !important;
+            }
+            &:last-child{
+              border-left: none !important;
+            }
+          }
+          &:nth-of-type(odd) {
+            background-color: #f9f9f9;
+          }
+        }
+      }
+
+    }
+
+  .content-bottom{
+    margin-top: 20px;
+    .action{
+      @include flex-row-around;
+      margin: 20px 0;
+      .select-box{
+        margin: 0;
+        select{
+          box-shadow: 0 3px 5px 0 rgba(151,151,151,0.25);
+          border: 1px solid rgba(173,173,173,0.25);
+          font-weight: bold;
+        }
+      }
+      .btn{
+        padding: 9px 12px 9px 17px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.select-box{
+  position: relative;
+  .icon{
+    @include position-center-vertical;
+    right: 10px;
+  }
+  .input-select{
+    position: relative;
+  }
+  select{
+    height: 40px;
+    min-width: 220px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    letter-spacing: 1px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #757671;
+    &::-ms-expand {
+      display: none;
+    }
+  }
+  &.has-error{
+    select{
+      border-color: $red;
+    }
+  }
+}

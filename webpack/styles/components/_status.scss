@@ -1,0 +1,82 @@
+.status-duty {
+  text-align: left;
+  .status {
+    border-radius: 3px;
+    padding: 4px 0;
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 9px;
+    margin-top: 5px;
+    min-width: 85px;
+    max-width: 90px;
+    &.onduty {
+      background: $onduty;
+    }
+    &.driving {
+      background: $driving;
+    }
+    &.offduty {
+      background: $offduty;
+    }
+    &.slepper {
+      background: $sleeper;
+    }
+    &.no-defects {
+      background: $lightgray;
+      color: $black;
+    }
+    &.unsigned {
+      background: $violation;
+      color: $white;
+    }
+  }
+  .incomplete {
+    width: 80%;
+  }
+  .status-duty-icon {
+    color: $eld;
+    font-weight: bold;
+  }
+}
+
+.status-logs {
+  width: 100px;
+}
+
+.icon-status {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  &.onduty {
+    background: $bg-icon;
+  }
+  &.driving {
+    background: $driving;
+  }
+}
+
+.status-devices {
+  width: 100px;
+  margin: auto;
+}
+
+.status-authorization {
+  overflow: hidden;
+  margin-top: 14px;
+  .title-authorization {
+    float: left;
+    text-transform: uppercase;
+    color: $black;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  .status-number {
+    color: $black;
+    padding: 0px 22px;
+    margin-left: 85px;
+    float: left;
+    font-weight: bold;
+    border-radius: 7px;
+  }
+}

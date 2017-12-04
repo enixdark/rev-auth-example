@@ -1,0 +1,21 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+
+<div id="main">
+  <div class="login">
+      {{ template "layout/header.html"}}
+
+      {{ template "layout/content.html"}}
+
+      {{template "flash.html" .}}
+
+      <!-- <div class="form-login-drive">
+        </div>
+            <p class="copy-bottom">&copy; Drive Inc. 2017</p>
+        </div>
+      </div> -->
+
+  </div>  
+</div>
+
+{{template "footer.html" .}}

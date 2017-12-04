@@ -1,0 +1,399 @@
+.circle-animate{
+  position: absolute;
+  top: 27px;
+  left: 21px;
+  height: 20px;
+  z-index:1;
+  &:before{
+    content: "";
+    display: block;
+    width: 1px;
+    background-color: #eee;
+    height: 565%;
+    position: relative;
+    top: 5px;
+    left: -1PX;
+  }
+  div{
+    position: absolute;
+    border-radius: 50%;
+    background: #000;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  &.green{
+    div{
+      border: 3px solid $green;
+      -webkit-animation: back-color-green linear 8s infinite;
+      -moz-animation: back-color-green linear 8s infinite;
+      animation: back-color-green linear 8s infinite;
+      &:nth-of-type(1){
+        height: 5px;
+        width: 5px;
+        top: calc(5% - (5px / 2));
+        left: calc(5% - (5px / 2));
+        opacity: 0.8;
+        z-index: -1;
+        -webkit-animation: ripple ease-in 2s infinite, colors-green ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-green ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-green ease-in 8s infinite;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+      }
+      &:nth-of-type(2){
+        height: 10px;
+        width: 10px;
+        top: calc(5% - (10px / 2));
+        left: calc(5% - (10px / 2));
+        opacity: 0.6;
+        z-index: -2;
+        -webkit-animation: ripple ease-in 2s infinite, colors-green ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-green ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-green ease-in 8s infinite;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+      }
+      &:nth-of-type(3){
+        height: 15px;
+        width: 15px;
+        top: calc(5% - (15px / 2));
+        left: calc(5% - (15px / 2));
+        opacity: 0.4;
+        z-index: -3;
+        -webkit-animation: ripple ease-in 2s infinite, colors-green ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-green ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-green ease-in 8s infinite;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+    }
+
+  }
+  &.blue{
+    div{
+      border: 3px solid $off-duty;
+      -webkit-animation: back-color-blue linear 8s infinite;
+      -moz-animation: back-color-blue linear 8s infinite;
+      animation: back-color-blue linear 8s infinite;
+      &:nth-of-type(1){
+        height: 5px;
+        width: 5px;
+        top: calc(5% - (5px / 2));
+        left: calc(5% - (5px / 2));
+        opacity: 0.8;
+        z-index: -1;
+        -webkit-animation: ripple ease-in 2s infinite, colors-blue ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-blue ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-blue ease-in 8s infinite;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+      }
+      &:nth-of-type(2){
+        height: 10px;
+        width: 10px;
+        top: calc(5% - (10px / 2));
+        left: calc(5% - (10px / 2));
+        opacity: 0.6;
+        z-index: -2;
+        -webkit-animation: ripple ease-in 2s infinite, colors-blue ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-blue ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-blue ease-in 8s infinite;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+      }
+      &:nth-of-type(3){
+        height: 15px;
+        width: 15px;
+        top: calc(5% - (15px / 2));
+        left: calc(5% - (15px / 2));
+        opacity: 0.4;
+        z-index: -3;
+        -webkit-animation: ripple ease-in 2s infinite, colors-blue ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-blue ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-blue ease-in 8s infinite;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+    }
+
+  }
+  &.red{
+    div{
+      border: 3px solid $red;
+      -webkit-animation: back-color-red linear 8s infinite;
+      -moz-animation: back-color-red linear 8s infinite;
+      animation: back-color-red linear 8s infinite;
+      &:nth-of-type(1){
+        height: 5px;
+        width: 5px;
+        top: calc(5% - (5px / 2));
+        left: calc(5% - (5px / 2));
+        opacity: 0.8;
+        z-index: -1;
+        -webkit-animation: ripple ease-in 2s infinite, colors-red ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-red ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-red ease-in 8s infinite;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+      }
+      &:nth-of-type(2){
+        height: 10px;
+        width: 10px;
+        top: calc(5% - (10px / 2));
+        left: calc(5% - (10px / 2));
+        opacity: 0.6;
+        z-index: -2;
+        -webkit-animation: ripple ease-in 2s infinite, colors-red ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-red ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-red ease-in 8s infinite;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+      }
+      &:nth-of-type(3){
+        height: 15px;
+        width: 15px;
+        top: calc(5% - (15px / 2));
+        left: calc(5% - (15px / 2));
+        opacity: 0.4;
+        z-index: -3;
+        -webkit-animation: ripple ease-in 2s infinite, colors-red ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-red ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-red ease-in 8s infinite;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+    }
+
+  }
+  &.orange{
+    div{
+      border: 3px solid $warning;
+      -webkit-animation: back-color-warning linear 8s infinite;
+      -moz-animation: back-color-warning linear 8s infinite;
+      animation: back-color-warning linear 8s infinite;
+      &:nth-of-type(1){
+        height: 5px;
+        width: 5px;
+        top: calc(5% - (5px / 2));
+        left: calc(5% - (5px / 2));
+        opacity: 0.8;
+        z-index: -1;
+        -webkit-animation: ripple ease-in 2s infinite, colors-warning ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-warning ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-warning ease-in 8s infinite;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+      }
+      &:nth-of-type(2){
+        height: 10px;
+        width: 10px;
+        top: calc(5% - (10px / 2));
+        left: calc(5% - (10px / 2));
+        opacity: 0.6;
+        z-index: -2;
+        -webkit-animation: ripple ease-in 2s infinite, colors-warning ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-warning ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-warning ease-in 8s infinite;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+      }
+      &:nth-of-type(3){
+        height: 15px;
+        width: 15px;
+        top: calc(5% - (15px / 2));
+        left: calc(5% - (15px / 2));
+        opacity: 0.4;
+        z-index: -3;
+        -webkit-animation: ripple ease-in 2s infinite, colors-warning ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-warning ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-warning ease-in 8s infinite;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+    }
+
+  }
+  &.purple{
+    div{
+      border: 3px solid $purple;
+      -webkit-animation: back-color-purple linear 8s infinite;
+      -moz-animation: back-color-purple linear 8s infinite;
+      animation: back-color-purple linear 8s infinite;
+      &:nth-of-type(1){
+        height: 5px;
+        width: 5px;
+        top: calc(5% - (5px / 2));
+        left: calc(5% - (5px / 2));
+        opacity: 0.8;
+        z-index: -1;
+        -webkit-animation: ripple ease-in 2s infinite, colors-purple ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-purple ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-purple ease-in 8s infinite;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+      }
+      &:nth-of-type(2){
+        height: 10px;
+        width: 10px;
+        top: calc(5% - (10px / 2));
+        left: calc(5% - (10px / 2));
+        opacity: 0.6;
+        z-index: -2;
+        -webkit-animation: ripple ease-in 2s infinite, colors-purple ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-purple ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-purple ease-in 8s infinite;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+      }
+      &:nth-of-type(3){
+        height: 15px;
+        width: 15px;
+        top: calc(5% - (15px / 2));
+        left: calc(5% - (15px / 2));
+        opacity: 0.4;
+        z-index: -3;
+        -webkit-animation: ripple ease-in 2s infinite, colors-purple ease-in 8s infinite;
+        -moz-animation: ripple ease-in 2s infinite, colors-purple ease-in 8s infinite;
+        animation: ripple ease-in 2s infinite, colors-purple ease-in 8s infinite;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+    }
+
+  }
+}
+
+@keyframes ripple {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes colors-green {
+  0%,
+  100% {
+    background: #73e0a4;
+  }
+  33% {
+    background: #34d27b;
+  }
+  67% {
+    background: #229857;
+  }
+}
+@keyframes back-color-green {
+  0%,
+  100% {
+    background:  #229857;
+  }
+  33% {
+    background: #34d27b;
+  }
+  67% {
+    background: #73e0a4;
+  }
+}
+
+@keyframes colors-blue {
+  0%,
+  100% {
+    background: #3395ff;
+  }
+  33% {
+    background: #007aff;
+  }
+  67% {
+    background: #0062cc;
+  }
+}
+@keyframes back-color-blue {
+  0%,
+  100% {
+    background:  #0062cc;
+  }
+  33% {
+    background: #007aff;
+  }
+  67% {
+    background: #3395ff;
+  }
+}
+
+@keyframes colors-red {
+  0%,
+  100% {
+    background: #ed7669;
+  }
+  33% {
+    background: #e74c3c;
+  }
+  67% {
+    background: #d62c1a;
+  }
+}
+@keyframes back-color-red {
+  0%,
+  100% {
+    background:  #d62c1a;
+  }
+  33% {
+    background: #e74c3c;
+  }
+  67% {
+    background: #ed7669;
+  }
+}
+
+@keyframes colors-warning {
+  0%,
+  100% {
+    background: #feb746;
+  }
+  33% {
+    background: #f39c12;
+  }
+  67% {
+    background: #d98b10;
+  }
+}
+@keyframes back-color-warning {
+  0%,
+  100% {
+    background:  #d98b10;
+  }
+  33% {
+    background: #f39c12;
+  }
+  67% {
+    background: #feb746;
+  }
+}
+
+@keyframes colors-purple {
+  0%,
+  100% {
+    background: #9c9be3;
+  }
+  33% {
+    background: #9694d7;
+  }
+  67% {
+    background: #7877aa;
+  }
+}
+@keyframes back-color-purple {
+  0%,
+  100% {
+    background:  #7877aa;
+  }
+  33% {
+    background: #9694d7;
+  }
+  67% {
+    background: #9c9be3;
+  }
+}

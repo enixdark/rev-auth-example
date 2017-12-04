@@ -1,0 +1,214 @@
+// modal
+.modal-dialog{
+  top: 10%;
+  .modal-header{
+    border: 1px solid #979797;
+    background: $bg-drive;
+  }
+
+}
+.scroll-change-logs-event-1 {
+  //overflow: hidden;
+  //overflow-y: scroll;
+  //height: 355px;
+  border: 1px solid #fff;
+}
+
+.text-popup-body {
+  font-size: $title;
+}
+
+.title-modal-driver {
+  span {
+    font-size: $number;
+    font-weight: 600;
+  }
+}
+
+.popup-content-driver {
+  .text-popup {
+    font-weight: 400;
+    color: #000;
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+.switch-modal {
+  float: left;
+}
+
+.remaining {
+  float: right;
+  h4 {
+    color: $black;
+    font-weight: 700;
+    display: block;
+    overflow: hidden;
+    font-size: $article;
+    float: left;
+    opacity: 0.8;
+  }
+  span {
+    border: 1px solid #ccc;
+    float: right;
+    padding: 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: $red;
+  }
+}
+
+.title-modal-footer {
+  .text-status-popup {
+    color: #757671;
+    font-size: $status;
+  }
+}
+
+.status-switch {
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  .status-modal-footer {
+    @include position-center-icon;
+    right: 0;
+  }
+  .text-modal {
+    font-size: $sidebar;
+    font-weight: 600;
+  }
+}
+
+// validate form modal
+.validate-address-form {
+  font-size: 12px !important;
+  font-weight: 400;
+  float: right;
+  display: none;
+}
+
+.has-error-driver {
+  input {
+    border: 1px solid $red;
+  }
+  .validate-address-form {
+    color: $red;
+    display: block;
+  }
+  select {
+    border: 1px solid $red;
+  }
+}
+
+.form-modal-drive {
+  margin-top: 20px;
+  text-align: left;
+  .label-input {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    span {
+      color: $darkgray;
+      font-size: 10px;
+    }
+  }
+  input {
+    height: 40px;
+    font-size: $article;
+    color: $text-color;
+    font-weight: 600;
+    &:-moz-placeholder {
+      color: $darkgray20;
+      font-weight: 400;
+      font-size: $article;
+    }
+    &:-ms-input-placeholder {
+      color: $darkgray20;
+      font-weight: 400;
+      font-size: $article;
+
+    }
+    &::-webkit-input-placeholder {
+      color: $darkgray20;
+      font-weight: 400;
+      font-size: $article;
+
+    }
+    &::-moz-placeholder {
+      color: $darkgray20;
+      font-weight: 400;
+      font-size: $article;
+
+    }
+  }
+  select {
+    height: 45px;
+  }
+  .height-select {
+    height: 40px;
+  }
+}
+
+.form-input {
+  height: 38px !important;
+}
+
+.input-group-time {
+  input {
+    border-right: none;
+  }
+}
+
+.input-group-addon-icon {
+  background: $white;
+  .icon-input-group {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #FED014;
+    background-color: #1D2029;
+    display: block;
+    @include flex-center-center;
+    i {
+      color: #FED014;
+    }
+  }
+}
+
+.input-disabled {
+  border: 1px solid #f9f9f9;
+  background: #fff;
+}
+
+// ------------------------------------------ modal add user--------------------------------------------
+.modal-add-user{
+  .modal-header{
+    padding: 22px 20px 22px 40px;
+    border-bottom: 1px solid #979797;
+    .modal-title{
+      .icon{
+        margin-right: 20px;
+      }
+      .modal-heading{
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+  }
+  .modal-body{
+    padding: 30px;
+    padding-bottom: 80px;
+    .title{
+      color: $text-color;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .modal-footer{
+    padding: 20px 30px;
+  }
+}
+

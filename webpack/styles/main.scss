@@ -1,0 +1,138 @@
+//helper
+@import "helper/variable";
+@import "helper/mixin";
+// import component
+@import "components/custom-class";
+@import "components/text";
+@import "components/list";
+@import "components/button";
+@import "components/header";
+@import "components/sidebar";
+@import "components/status";
+@import "components/modal";
+@import "components/toggle-select";
+@import "components/circle";
+@import "components/alerts";
+@import "components/action";
+@import "components/charts";
+@import "components/form";
+@import "components/datetimepiker";
+@import "components/table";
+@import "components/loading";
+// @import "components/table";
+// import page
+@import "page/home";
+@import "page/dashboard";
+@import "page/driver";
+@import "page/login";
+@import "page/account-created";
+@import "page/driver-logs";
+@import "page/logs-edit";
+@import "page/daily-log";
+@import "page/account-setup";
+@import "page/setting-profile";
+@import "page/empty";
+@import "page/log-empty";
+@import "page/signature";
+@import "page/report";
+@import "page/drive-request";
+@import "page/logs-unidentified";
+@import "page/user";
+// import media query
+@import "components/media-query";
+
+@font-face {
+  font-family: Futura-normal;
+  src: url(../fonts/futura/Futura.ttc);
+}
+
+@font-face {
+  font-family: FuturaPRO-bold;
+  src: url(../fonts/futura/FuturaPRO-Bold.otf);
+  src: url(../fonts/futura/FuturaPRO-Bold.eot);
+  src: url(../fonts/futura/FuturaPRO-Bold.ttf);
+    src: url(../fonts/futura/FuturaPRO-Bold.woff);
+
+}
+
+@font-face {
+  font-family: FuturaPRO-ExtraBold;
+  src: url(../fonts/futura/FuturaPRO-ExtraBold.otf);
+  src: url(../fonts/futura/FuturaPRO-ExtraBold.eot);
+  src: url(../fonts/futura/FuturaPRO-ExtraBold.ttf);
+  src: url(../fonts/futura/FuturaPRO-ExtraBold.woff);
+}
+
+@font-face {
+  font-family: FuturaPRO-Medium;
+  src: url(../fonts/futura/FuturaPRO-Medium.otf);
+  src: url(../fonts/futura/FuturaPRO-Medium.eot);
+  src: url(../fonts/futura/FuturaPRO-Medium.ttf);
+  src: url(../fonts/futura/FuturaPRO-Medium.woff);
+}
+
+@font-face {
+  font-family: FuturaPRO-Light;
+  src: url(../fonts/futura/FuturaPRO-Light.otf);
+  src: url(../fonts/futura/FuturaPRO-Light.eot);
+  src: url(../fonts/futura/FuturaPRO-Light.ttf);
+  src: url(../fonts/futura/FuturaPRO-Light.woff);
+}
+
+button, button:focus, button:active, input {
+  outline: none !important;
+
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, p, span, label, a {
+  color: $text-color;
+}
+input{
+  &::-ms-clear {
+    display: none;
+  }
+}
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.icon-building{
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+.icon-building-off{
+  background-image: url("../images/building-icon-off.png");
+}
+.icon-building-active{
+    background-image: url("../images/building-icon.png");
+}
+.icon-wheel-off{
+  background-image: url("../images/icon-wheel.png");
+}
+.icon-wheel-active{
+    background-image: url("../images/icon-driver-active.png");
+}
+
+
+

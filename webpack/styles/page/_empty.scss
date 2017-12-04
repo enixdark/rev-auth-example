@@ -1,0 +1,119 @@
+// empty page
+.content-empty {
+  text-align: center;
+  .logo-empty {
+    margin: auto;
+    padding:160px 0 160px 0;
+    .image-empty {
+      width: 237px;
+      height:237px;
+      border-radius: 50%;
+      background:#7e8aa2;
+      @include flex-center-center;
+      margin:auto;
+      img {
+        width: 147px;
+        height: 147px;
+        border-radius:50%;
+      }
+      .icon{
+        font-size: 150px;
+      }
+    }
+    .title-empty {
+      font-weight:300;
+      font-size: 36px;
+    }
+    .click-title {
+      font-weight:600;
+      font-size:24px;
+    }
+  }
+}
+.oval-6 {
+  width:18px;
+  height:18px;
+  border-radius: 50%;
+  background: #E94B35;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  box-shadow: 0 -2px 4px 0 rgba(233,75,53,0.5), 0 2px 4px 0 rgba(233,75,53,0.5);
+}
+// logs view page
+.title-log-view {
+  font-weight:bold;
+  font-size: 27px;
+  color: $black;
+}
+.logs-view {
+  border:1px solid $darkgray1;
+  background: $white;
+  border-radius: 5px;
+  .logo-logs-view {
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 40px;
+    .image-logs-view {
+      width:135px;
+      height: 135px;
+      position: relative;
+      border-radius:50%;
+      margin:auto;
+      background:#7e8aa2;
+      .image-list {
+        font-size:70px;
+        @include position-center;
+      }
+    }
+  }
+  .text-logs-view {
+    color: $black;
+    font-size: 24px;
+    margin-top: 20px;
+    opacity: 0.9;
+  }
+}
+.title-content-logs-view {
+  padding-bottom: 30px;
+}
+.content-carrier {
+  padding-bottom:50px;
+  .tittle-carrier {
+    color: $black;
+    font-size:30px;
+    opacity:0.8;
+  }
+  .text-carrier {
+    color: $black;
+    font-size:17px;
+    margin-top:20px;
+  }
+  .center-carrier {
+    margin:auto;
+    width: 70%;
+    overflow: hidden;
+  }
+}
+.button-carrier {
+  margin-top:50px;
+  .btn-decline-left {
+    padding-top:3px;
+    padding-bottom:3px;
+    float: left;
+    margin-left:56px;
+  }
+  .btn-decline-right{
+    float: right;
+    margin-right:56px;
+    padding-top:3px;
+    padding-bottom:3px;
+  }
+}
+
+// specific device
+.specific-device{
+  border:1px solid $silver;
+  border-radius:6px;
+  padding-bottom:75px;
+}

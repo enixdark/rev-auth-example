@@ -1,0 +1,7 @@
+test-results/
+tmp/
+routes/
+
+node_modules/
+vendor/
+public/

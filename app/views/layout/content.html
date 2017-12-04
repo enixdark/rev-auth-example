@@ -1,0 +1,28 @@
+<div class="form-login-drive">
+    <div>
+        <h1 class="font-futura-probold">LOGIN</h1>
+            <form method="post" action="/login" accept-charset="UTF-8" class="login-form" id="login-form">
+                <input type="hidden" name="csrf_token" value="{{ .csrf_token }}" />
+                <div class="form-group form-group-drive ">
+                <label for="email-599745c3" data-name="email" class="email">EMAIL</label>
+                    <div class="wrap-input">
+                        <input id="email-599745c3" type="email" name="email" class="form-control" oninvalid="this.setCustomValidity('invalid email')">
+                            <i class="fa fa-envelope-o icon-email icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+     
+    
+        <div class="form-group form-group-drive ">
+            <label for="password-46ba9526" data-name="password" class="email">PASSWORD  </label>
+            <div class="wrap-input">
+                <input id="password-46ba9526" type="password" name="password" class="form-control" value="">
+                <i class="icon-lock icon-email icon" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="btn-login">
+        <button type="submit" class=" btn btn-default btn-continue btn-yellow">LOGIN
+      </button>
+        </div>
+    </form>
+    </div>
+</div>

@@ -1,0 +1,223 @@
+.daily-log{
+  &_content{
+
+  }
+  &_btn{
+    button{
+      min-width: 140px;
+    }
+  }
+  &_alert{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  &_list-log{
+    padding-right: 16px;
+    padding-left: 0;
+    display: inline-block;
+    width:100%;
+    margin-top:40px;
+    ul{
+      padding-left: 20px;
+      display: inline-block;
+      width:100%;
+      .active-logs {
+        background: #FED014;
+        .active-click {
+          display: block;
+        }
+        .status-td {
+          display: block;
+        }
+        .status-time {
+          background-color: rgba(173,173,173,0.25) !important;
+        }
+      }
+      li{
+        list-style: none;
+        padding-bottom: 36px;
+        position: relative;
+        padding-left:31px;
+        padding:15px 15px 15px 31px;
+        border-radius: 5px;
+        margin-top:6px;
+        cursor: pointer;
+
+        &.changed, &.new {
+          background-color: #fed014;
+        }
+
+        &:hover {
+          background-color: #F9F9F9;
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+          .hover-click {
+            display: block;
+          }
+          .active-click {
+            display: none;
+          }
+        }
+        &:last-child{
+          .circle-animate{
+            &:before{
+              display: none;
+            }
+          }
+        }
+        table{
+          width: 100%;
+          thead{
+            td{
+              &.td-first{
+                p{
+                  text-transform: uppercase;
+                  font-size: $font-13;
+                  font-weight: bold;
+                }
+              }
+              &.td-last{
+                .status-time{
+                  font-size: $text-small;
+                  background-color: $silver;
+                  border-radius: 3px;
+                  text-align: center;
+                  padding: 3px 10px;
+                  width:100px;
+                  float: right;
+                }
+                span{
+                  font-size: 13px;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+          tbody{
+            td{
+              &.td-first{
+                p{
+                  font-size: $font-13;
+                  position: relative;
+                  font-weight: 600;
+                  i {
+                    padding-right:5px;
+                  }
+                  .icon{
+                    font-size: 18px;
+                    position: absolute;
+                    left: 0;
+                    @include position-center-vertical
+                  }
+                }
+              }
+              &.td-middle{
+
+              }
+              &.td-last{
+                p{
+                  font-size: $font-13;
+
+                }
+                span{
+                  font-size: 13px;
+                  font-weight: 900;
+                }
+              }
+            }
+          }
+          td{
+            vertical-align: middle;
+            text-align: left;
+            width: 35%;
+            &.td-middle{
+              width: 20%;
+              text-align: center;
+            }
+            &.td-last{
+              width:65%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+.title-log-event {
+  margin-bottom:10px;
+  font-size:$font-13;
+  font-weight: bold;
+}
+.active-click {
+  font-weight: bold;
+  font-size:10px;
+  display: none;
+  text-transform: uppercase;
+}
+.hover-click {
+  color: #DEDEDE;
+  font-size: 12px !important;
+  font-weight:600 !important;
+  display: none;
+  text-transform: uppercase;
+  float: left;
+  &:hover {
+    color: #DEDEDE;
+  }
+}
+.td-first-left {
+  padding-left:40px;
+}
+.active-popup {
+  position: absolute;
+  top:0;
+  border-radius: 5px;
+  left:0;
+  width: 100%;
+  height: 100%;
+  @include flex-row-around;
+  background-color: rgba(249,249,249,0.65);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  .icon-close-pop {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    cursor: pointer;
+    i {
+      font-size: 20px;
+      color: #e1e1e1;
+    }
+  }
+}
+.btn-delete-event {
+  width: 263px;
+  border: 1px solid rgba(173,173,173,0.75);
+  border-radius: 5px;
+  background: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 11px;
+  .icon-delete {
+    color: #E94B35;
+  }
+  .icon-edit {
+    color: #007AFF;
+  }
+}
+.modal-location-detail {
+  float: left;
+  margin-top:0;
+}
+.content-modal-change {
+  padding-top:0;
+  &:hover {
+    background: none !important;
+    box-shadow: none !important;
+  }
+}
+//.active-popup-child {
+//  display: none;
+//}
+// Custom chart

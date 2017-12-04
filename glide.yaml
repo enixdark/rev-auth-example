@@ -1,0 +1,14 @@
+package: authApp
+import:
+- package: github.com/revel/revel
+  version: ^0.18.0
+  subpackages:
+  - testing
+- package: github.com/jinzhu/gorm
+  subpackages:
+  - yaml
+- package: github.com/lib/pq
+- package: github.com/cbonello/revel-csrf
+- package: golang.org/x/crypto
+  subpackages:
+  - bcrypt

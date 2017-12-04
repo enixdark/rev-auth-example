@@ -1,0 +1,313 @@
+.table-driver-logs {
+  width: 100%;
+  margin-top: 0 !important;
+}
+
+.content-chart-logs {
+  border: none;
+}
+
+.content-table-name-logs {
+  .date-driver-logs {
+    font-size: $article;
+    font-weight: 600;
+  }
+  .date-driver-logs-red {
+    color: $violation;
+    font-weight: 600;
+    font-size: $article;
+  }
+}
+
+.icon-edit-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon-alerts {
+  width: 100%;
+  .icon-exclamation-triangle-modal {
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+    font-size: 17px;
+  }
+  strong {
+    font-weight: 400;
+    font-size: $font-13;
+    color: $text-color;
+  }
+}
+
+.btn-alerts-modal {
+  float: right;
+  a {
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+}
+
+.title-alert-modal {
+  text-align: left;
+}
+
+.table-driver-logs {
+  background: $bg-drive;
+}
+
+.table-content-driver .table-driver .tr-driver {
+
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  &:hover {
+    //box-shadow: 0 5px 8px 0 rgba(132, 141, 168, 0.9);
+    @include box-shadow;
+  }
+}
+
+.hos-violation {
+  width: 25% !important;
+}
+
+.edit-icon-logs {
+  position: absolute;
+  top: 56px;
+}
+
+.btn-inactive-logs {
+  padding: 0px 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  background: $violation;
+}
+
+.content-chart-logs {
+  background: $bg-drive;
+}
+
+.btn-has-icon {
+  &.icon-check-left {
+    box-shadow: none;
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    .check-text {
+      font-size: $article;
+      font-weight: 600;
+    }
+    .icon {
+      i {
+        color: $driving;
+        font-size: 17px;
+        position: relative;
+        top: -4px;
+      }
+    }
+  }
+}
+
+.status-center {
+  margin: auto;
+}
+
+.icon-right-check {
+  margin-right: 10px;
+}
+
+.content-re-activate {
+  display: none;
+}
+
+.content-de-activate {
+  display: none;
+}
+
+.de-activate-driver {
+  display: none;
+}
+
+.btn-cancel {
+  cursor: pointer;
+}
+
+.squaredcheck {
+  width: 25px;
+  position: relative;
+  label {
+    width: 18px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: lighten(#38D78E, 20%);
+    border-radius: 4px;
+    &:after {
+      content: '';
+      width: 10px;
+      height: 5px;
+      position: absolute;
+      top: 6px;
+      left: 5px;
+      border: 2px solid #fff;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.3;
+    }
+  }
+  span {
+    position: absolute;
+    width: 300px;
+    left: 30px;
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label {
+      background: #38D78E;
+    }
+    &:checked + label:after {
+      opacity: 1;
+    }
+  }
+}
+
+.squaredcheck-1 {
+  width: 25px;
+  position: relative;
+  label {
+    width: 18px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: lighten(#38D78E, 20%);
+    border-radius: 4px;
+    &:after {
+      content: '';
+      width: 10px;
+      height: 5px;
+      position: absolute;
+      top: 6px;
+      left: 5px;
+      border: 2px solid #fff;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.3;
+    }
+  }
+  span {
+    position: absolute;
+    width: 300px;
+    left: 30px;
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label {
+      background: #38D78E;
+    }
+    &:checked + label:after {
+      opacity: 1;
+    }
+  }
+}
+
+.avatar-name {
+  width: 80px;
+  height: 80px;
+  background: $yellow;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size:23px;
+  margin:auto;
+  @include flex-column-center;
+}
+
+.row-checkbbox{
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.label-cbx {
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 0;
+  width: 100%;
+  position: relative;
+  padding-left: 30px;
+}
+.label-cbx input:checked + .checkbox {
+  border-color: #38D78E;
+}
+.label-cbx input:checked + .checkbox svg path {
+  fill: #38D78E;
+}
+.label-cbx input:checked + .checkbox svg polyline {
+  stroke-dashoffset: 0;
+}
+.label-cbx:hover .checkbox svg path {
+  stroke-dashoffset: 0;
+}
+.label-cbx .checkbox {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C8CCD4;
+  border-radius: 3px;
+  margin: 0;
+  margin-right: 20px;
+}
+.label-cbx .checkbox svg {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+.label-cbx .checkbox svg path {
+  fill: none;
+  stroke: #38D78E;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 71px;
+  stroke-dashoffset: 71px;
+  transition: all 0.6s ease;
+}
+.label-cbx .checkbox svg polyline {
+  fill: none;
+  stroke: #FFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 18px;
+  stroke-dashoffset: 18px;
+  transition: all 0.3s ease;
+}
+.label-cbx > span {
+  pointer-events: none;
+  vertical-align: middle;
+}
+
+
+
+.invisible {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}

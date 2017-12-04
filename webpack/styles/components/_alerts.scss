@@ -1,0 +1,53 @@
+// alerts css
+.alerts-driver {
+  display: block;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  padding:10px;
+  margin:auto;
+  text-align: center;
+  min-width: initial;
+  .warning-logs-edit {
+    display: block;
+    overflow: hidden;
+    text-align: left;
+  }
+  span {
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $green;
+    display: block;
+    float: left;
+    @include flex-center-center;
+    i {
+      color:#fff;
+    }
+  }
+  p {
+    font-weight: 600;
+    font-size: $title;
+  }
+}
+.icon-alert-circle {
+  i {
+    float: left;
+    font-size: 23px;
+  }
+}
+.check-everthing p {
+  position: relative;
+  padding-left:30px;
+  font-size: $sidebar;
+  font-weight: 600;
+  .icon-alert-danger {
+    @include position-center-vertical;
+    left:10px;
+    font-size: 24px;
+  }
+}
+.warning-circle {
+  float: left;
+  font-size: 21px;
+}

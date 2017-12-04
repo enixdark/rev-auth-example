@@ -1,0 +1,108 @@
+.report {
+  padding-right: 20px;
+  padding-left:20px;
+  overflow: hidden;
+  background: $white;
+  .table {
+    border:1px solid #ccc;
+    text-align: center;
+  }
+  thead {
+    background: #f1f1f1;
+    th {
+      text-align: center;
+    }
+  }
+  .content-report {
+    padding-top:48px;
+  }
+  .report-border {
+    border-bottom: 1px solid #ccc;
+    margin:0;
+    margin-bottom: 20px;
+  }
+  .chart-report {
+    width: 100%;
+    overflow: hidden;
+    padding-top:15px;
+  }
+}
+.title-header-left {
+  h1 {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+.title-report {
+  float: left;
+  padding-top: 50px;
+  p {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+}
+.logo-report {
+  float: right;
+  width: 120px;
+  margin-bottom: 20px;
+  img{
+    width: 100%;
+  }
+}
+.padding-0 {
+  padding:0;
+}
+.table-report-center {
+  h1 {
+    font-size:26px;
+  }
+}
+.signed-bottom {
+  text-align: center;
+  margin-top:50px;
+  .content-signed {
+    margin:auto;
+    width: 35%;
+    border:1px solid #ccc;
+    padding-bottom:10px;
+    img {
+      width: 100px;
+      height: 83px;
+      margin-top:20px;
+    }
+  }
+  .date-event {
+    color: #000;
+    font-weight:700;
+    font-size: 18px;
+  }
+  .page-bottom {
+    border-top:1px solid #ccc;
+    padding:20px;
+    text-align: center;
+    margin-top:50px;
+    p {
+      color: $text-color;
+      font-weight:700;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+}
+.row-date {
+  margin-top:15px;
+  .date-report {
+    color: #c5c5c5;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .date-content {
+    color: $text-color;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}

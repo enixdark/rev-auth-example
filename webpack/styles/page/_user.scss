@@ -1,0 +1,83 @@
+.table-content-driver .table-default{
+  margin-top: 10px;
+  .tr-driver{
+    .th{
+      display: table-cell;
+      border: none;
+      margin-top: 10px;
+      padding: 15px 10px;
+      width: calc(100% / 6);
+      vertical-align: middle;
+      color: #979797;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 14px;
+      text-align: center;
+      cursor: pointer;
+      &.th-first{
+        text-align: left;
+        .icon{
+          font-size: 15px;
+        }
+      }
+    }
+    .td-driver{
+      padding: 15px 10px;
+      cursor: initial;
+      font-size: 14px;
+      font-weight: normal;
+      color: $text-color;
+      &.td-first{
+        text-align: left;
+        font-weight: 600;
+      }
+
+    }
+  }
+
+}
+.pagination-table-user{
+  li{
+    a{
+      display: block;
+      min-width: 30px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0;
+      cursor: pointer;
+    }
+    .prev, .next{
+      min-width: 50px;
+    }
+  }
+}
+.wrap-tabs {
+  background: $yellow;
+  padding:2px;
+  border-radius:4px;
+  width: 317px;
+  margin:auto;
+  margin-top: 20px;
+}
+.list-tabs {
+  display: flex;
+  .item {
+    width: 100%;
+    background: #fff;
+    font-size: 12px;
+    margin:1px;
+    font-weight:800;
+    a{
+      display: block;
+      padding: 3px;
+    }
+  }
+  .active {
+    background: $yellow;
+  }
+}
+
+.alert{
+    text-align: left;
+}

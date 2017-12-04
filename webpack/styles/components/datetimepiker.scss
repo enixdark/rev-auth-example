@@ -1,0 +1,45 @@
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  width: 25em;
+  padding:15px;
+}
+.bootstrap-datetimepicker-widget {
+  table td.active {
+    background-color: #FED014;
+    &:hover {
+      opacity: 0.7 !important;
+      background-color: #FED014;
+    }
+  }
+  table td.today:before {
+    display: none;
+  }
+  table td.old, .bootstrap-datetimepicker-widget table td.new {
+    background-color: rgba(151,151,151,0.15);
+    color: #BAC2C7;
+  }
+  a[data-action] {
+    display: none;
+  }
+}
+.bootstrap-datetimepicker-widget table td.day {
+  font-size: 12px;
+}
+.input-group.date .input-group-addon {
+  border:none;
+  background: #f9f9f9;
+}
+.form-control:focus {
+  box-shadow: none;
+  background: #f9f9f9;
+}
+.input-group-addon-time {
+  border:1px solid #ccc !important;
+  background: $white !important;
+  border-left:none !important;
+}
+.input-timepicker-insert {
+  border-right: none;
+}
+.time-moddal-picker .bootstrap-datetimepicker-widget.dropdown-menu {
+  width: 16em;
+}

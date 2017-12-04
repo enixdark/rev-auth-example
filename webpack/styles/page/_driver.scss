@@ -1,0 +1,652 @@
+// driver
+.content-drive-active {
+  background: $bg-drive;
+  border: 1px solid $bg-drive;
+  margin-top: 10px;
+  .tab-drive {
+    background: $yellow;
+    display: block;
+    overflow: hidden;
+    width: 48%;
+    text-align: center;
+    margin: auto;
+    margin-top: 38px;
+    padding: 2px 4px 2px 2px;
+    border-radius: 3px;
+    .active {
+      background: $yellow !important;
+    }
+    .tab-list {
+      font-weight: bold;
+      list-style: none;
+      float: left;
+      font-size: $status;
+
+      background: $white;
+      margin-left: 2px;
+      width: 100%;
+      a {
+        text-decoration: none;
+        font-weight: 800;
+        padding: 5px 10px;
+        display: block;
+      }
+      &:hover {
+        background: $white;
+      }
+    }
+  }
+}
+
+.col-table-image {
+  width: 11% !important;
+}
+
+.col-table-name {
+  width: 25% !important;
+}
+
+// end tab driver css
+.name-task span {
+  color: rgba(117, 117, 113, 0.6);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.popup-body-driver {
+  display: block;
+  overflow: hidden;
+}
+
+.icon-status-modal {
+  text-align: center;
+  overflow: hidden;
+}
+
+.table-content-driver {
+  text-align: center;
+  .table-drive-child-box {
+    //box-shadow: 0 5px 8px 0 rgba(132, 141, 168, 0.29);
+    border-radius: 5px;
+  }
+  .table-content-right {
+    width: 88%;
+  }
+  .table-driver {
+    margin: auto;
+    border: none;
+    margin-top: 30px;
+    border-collapse: collapse;
+    display: table;
+    .title-table-driver {
+      background: $bg-drive !important;
+      box-shadow: none !important;
+      border: none !important;
+      .td-hos-compliance {
+        a {
+          text-decoration: none;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .col-content-name {
+      width: 14% !important;
+    }
+    .content-table-driver {
+      padding-top: 10px;
+      margin-bottom: 20px;
+    }
+    .tr-driver {
+      background: $white;
+      color: $lightgray;
+      display: table;
+      table-layout: fixed;
+      border-radius: 5px;
+      width: 100%;
+      .td-driver {
+        display: table-cell;
+        border: none;
+        margin-top: 10px;
+        padding: 10px;
+        width: calc(100% / 6);
+        vertical-align: middle;
+        cursor: pointer;
+        color: $darkgray20;
+        font-size:12px;
+        font-weight:bold;
+        word-break: break-word;
+        word-wrap: break-word;
+        &.col-span-2 {
+          width: 70%;
+        }
+        &.col-span-3 {
+          width: 96%;
+        }
+        .name-task {
+          display: block;
+          overflow: hidden;
+          text-align: left;
+          padding-left: 16px;
+        }
+        img {
+          width: 53px;
+          float: left;
+          height: 53px;
+          border-radius: 50%;
+        }
+        .name-avatar {
+          width: 53px;
+          float: left;
+          height: 53px;
+          border-radius: 50%;
+          background: $yellow;
+          padding-top: 14px;
+          font-size: $name;
+          font-weight: bold;
+          margin: 0;
+        }
+        .name-title-avar {
+          display: block;
+          overflow: hidden;
+          margin: 0;
+          font-weight: 600;
+          font-size: $title;
+        }
+        .text-null-bottom {
+          font-weight: bold;
+          font-size: $status;
+          border-radius: 5px;
+          background-color: #DEDEDE;
+          padding: 5px 0;
+          width: 90%;
+        }
+        .status-duty {
+          text-align: center;
+          text-transform: uppercase;
+          .status-duty-icon {
+            color: $eld;
+            font-weight: bold;
+            @include flex-center-center;
+          }
+        }
+      }
+    }
+    .location-icon {
+      font-weight: 600;
+      font-size: $font-13;
+    }
+    .title-time {
+      color: #979797;
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .miles {
+      color: $darkgray;
+      font-size: $number;
+      font-weight: bold;
+    }
+  }
+}
+
+.pagination > li > a {
+  &.prev:hover,&.next:hover{
+    background: none;
+  }
+  &:hover {
+    background: $yellow;
+    border-radius: 50%;
+    color: $text-color;
+  }
+}
+
+.pagination {
+  li {
+    .prev {
+      color: $text-color;
+      opacity: 0.5;
+      font-weight: 600;
+      font-size: $number;
+    }
+    .next-1 {
+      font-size: $number;
+    }
+    a {
+      border: none;
+      margin-left: 2px;
+      background: none;
+      font-weight: 600;
+      font-size: $title;
+      color: $text-color;
+    }
+    .active {
+      background: $yellow;
+      border-radius: 50%;
+    }
+  }
+}
+
+.text-status {
+  margin: auto;
+}
+
+.content-table-avatar {
+  width: 7% !important;
+}
+
+.td-driver-maps {
+  width: 20% !important;
+}
+
+.authorized {
+  width: 71% !important;
+}
+
+.check-everthing {
+  width: 78%;
+  margin: auto;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.btn-left {
+  border: 1px solid $gay11;
+  float: left;
+  margin-top: 5px;
+  padding: 6px;
+
+}
+
+.icon-left-tab {
+  width: 88%;
+  margin: auto;
+}
+
+.alert-add-driver {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.search-sub-header {
+  float: right;
+  width: 100%;
+  padding: 6px 12px;
+  border: 0;
+}
+
+.action-click {
+  background: $yellow;
+  color: $black;
+
+}
+
+
+// driver details
+
+.content-drive-details {
+  .drive-details {
+    padding: 20px 35px 0 40px;
+    background: $bg-drive;
+    display: block;
+    overflow: hidden;
+    margin-top: 10px;
+
+    .drive-details-left {
+      display: block;
+      overflow: hidden;
+      padding-bottom: 30px;
+      background: $white;
+      border-radius: 5px;
+      border: 1px solid #eee;
+      @include box-shadow;
+      .avatar-details {
+        position: relative;
+        padding-top: 15px;
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+        h5 {
+          font-size: $font-24;
+          font-weight: 600;
+        }
+        a {
+          position: absolute;
+          right: 10px;
+          background: $yellow;
+          top: 15px;
+          text-decoration: none;
+          margin-right: 0;
+        }
+      }
+      .content-detail-left {
+        text-align: left;
+        padding-left: 15px;
+        border-bottom: 1px solid #f8f8fa;
+        padding-bottom: 20px;
+      }
+      .details-email {
+        text-align: left;
+        padding: 15px;
+        p{
+          white-space: normal;
+          word-wrap: break-word;
+          word-break: break-word;
+        }
+      }
+      .status-bottom {
+        padding: 0 15px;
+        h4 {
+          float: left;
+          font-weight: bold;
+          font-size: $sidebar;
+        }
+        .number {
+          float: right;
+          margin-top: 10px;
+          color: $red;
+        }
+        .btn-submit-adddress {
+          text-decoration: none;
+          color: $black;
+          font-size: $status;
+          font-weight: bold;
+          display: block;
+          overflow: hidden;
+          width: 93%;
+          background: $yellow;
+          border-radius: 15px;
+          float: right;
+          margin-top: 15px;
+          padding: 0px 10px;
+          height: 35px;
+          @include flex-center-center;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+        .btn-startut {
+          display: block;
+          overflow: hidden;
+          h3 {
+            float: left;
+            color: #000;
+            font-weight: bold;
+            font-size: $number;
+          }
+          .status-slider {
+            float: right;
+            margin-top: 18px;
+          }
+          p {
+            color: #adadab;
+            font-size: $mobile;
+            font-weight: 600;
+          }
+        }
+        p {
+          display: inline-block;
+          text-align: left;
+          color: $gray;
+        }
+      }
+    }
+    .drive-details-right {
+      h1 {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0;
+        font-size: 21px;
+        span {
+          color: $black;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.state {
+  margin-top: 20px;
+  color: rgba(173, 173, 173, 0.75);
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.text-sam {
+  font-weight: bold;
+  font-size: $sidebar;
+  margin: 3px 0 0 0;
+}
+
+.content-chart {
+  padding-bottom: 10px;
+  background: $white;
+  //overflow: hidden;
+  border-radius: 5px;
+  border-top: none;
+  .content-heading-detail {
+    padding: 20px;
+  }
+  .content-details-center {
+    width: 33%;
+    float: left;
+  }
+  .content-details-right {
+    width: 100%;
+    float: left;
+    .content-details-right-bottom {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+      .title-location-center {
+        width: 50%;
+        margin: 94px auto 0 auto;
+      }
+    }
+  }
+}
+
+.submit-btn-details {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: 600;
+  a {
+    color: $black;
+    text-decoration: none;
+    background: $yellow;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: $mobile;
+    &:hover {
+      background: $yellow;
+      opacity: 0.8;
+    }
+  }
+}
+
+.user-driver-details {
+  text-align: center;
+  margin-top: 30px;
+  .icon-user-details {
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    background: $silver;
+    font-size: 35px;
+    @include flex-center-center;
+    i {
+      font-size: 50px;
+      color: #a7a8a5;
+    }
+  }
+  .content-user {
+    border: 1px solid #ccc;
+    background: $white;
+    width: 60%;
+    padding: 20px 30px;
+    text-align: left;
+    margin: 30px auto;
+    p {
+      color: $black;
+      font-size: $sidebar;
+      font-weight: 400;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.title-location-detail {
+  margin-top: 25px;
+  overflow: hidden;
+  min-height: 40px;
+  .status{
+    max-width: 90px;
+    float: left;
+  }
+  .none {
+    display: none;
+  }
+  .status-icon {
+
+  }
+  .icon-log-status {
+    float: left;
+    margin: 6px 0 0 4px;
+    color: $blue;
+  }
+  .co-driver {
+    font-weight: bold;
+    text-align: left;
+    margin-top: 4px;
+  }
+  .location {
+    color: $lightgray;
+    margin-bottom: 0;
+  }
+  .time {
+    color: $eld;
+    font-weight: 700;
+    font-size: $heading;
+  }
+}
+
+.header-icon-copy {
+  overflow: hidden;
+  position: relative;
+  padding: 15px;
+  padding-left: 0;
+  background: $bg-drive;
+  .header-icon-right {
+    float: right;
+    .icon-prev-left {
+      float: left;
+      margin-right: 40px;
+    }
+  }
+}
+
+.icon-datetime-left {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: $white;
+  display: block;
+  float: left;
+  margin-top: -6px;
+  position: absolute;
+  left: -128px;
+  top: 5px;
+  @include flex-center-center;
+  i {
+    font-size: 16px;
+    color: $text-color;
+  }
+}
+
+.header-datetime {
+  position: relative;
+  padding: 0 20px;
+  height: 40px;
+  border-bottom: 1px solid $darkgray10;
+  background: $bg-drive;
+  .header-icon {
+    float: left;
+    position: relative;
+    i {
+      color: $black;
+      font-size: 20px;
+    }
+    .icon-prev-left {
+      float: left;
+      margin-right: 40px;
+    }
+  }
+  .date-input {
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background: $bg-drive;
+    box-shadow: none;
+  }
+  .header-icon-right {
+    float: right;
+    .icon-pen {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: $white;
+      margin-right: 40px;
+      display: block;
+      float: left;
+      margin-top: -6px;
+      @include flex-center-center;
+    }
+    i {
+      color: $black;
+      font-size: 20px;
+    }
+    .icon-prev-left {
+      float: left;
+      margin-right: 40px;
+    }
+  }
+}
+
+.trailer-no-title {
+  margin-top: 89px;
+}
+
+.content-user {
+  color: $black;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.icon-fa-check {
+  font-size: 14px !important;
+}
+
+.arrow-right-white {
+  color: #ceced0 !important;
+}
+
+.status-left-log-icon {
+  float: left;
+  margin-right: 3px;
+}
+.wrap-content{
+  box-shadow: 0 5px 8px 0 rgba(132, 141, 168, 0.29);
+  border: 1px solid rgba(151,151,151,0.25);
+  border-top: none;
+}

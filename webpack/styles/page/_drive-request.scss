@@ -1,0 +1,453 @@
+.drive-block-right {
+  box-shadow: 0 5px 8px 0 rgba(132, 141, 168, 0.29);
+  background: #fff;
+  .content-drive-request-access {
+    text-align: center;
+    padding: 20px 10%;
+    .request-top-icon {
+      background: #f3f3f3;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      text-align: center;
+      display: inline-block;
+
+      i {
+        color: #757671;
+        font-size: 60px;
+        line-height: 1;
+        display: block;
+        line-height: 120px;
+      }
+
+    }
+    .request-text {
+      font-size: 30px;
+      color: #363941;
+      font-weight: 300;
+      margin: 20px 0;
+    }
+    .request-text-accept {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .request-bottom {
+      padding: 20px;
+      width: 300px;
+      display: inline-block;
+      .decline-btn {
+        color: #fff;
+        background: #e94b35;
+        border-radius: 5px;
+        padding: 3px 15px;
+        float: left;
+      }
+      .confirm-btn {
+        @extend .decline-btn;
+        background: #34d27b;
+        float: right;
+      }
+
+    }
+  }
+}
+
+.padding-inner {
+  padding: 0 150px;
+  .top-date-range {
+    padding: 0;
+    width: 100%;
+  }
+  .table-content-driver .table-driver {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// Log date selected open
+.pages-date-selected-open {
+  .status-duty .status.driving {
+    display: inline-block;
+  }
+
+}
+
+.selected-multiple-date {
+  margin-left: -10px;
+  &.log-tabs {
+    .wrap-input {
+      float: left;
+      input {
+        text-align: center;
+      }
+    }
+    .wrapper-logs-tabs {
+      float: left;
+      background: #fed014;
+      border-radius: 5px;
+      text-align: center;
+      width: 320px;
+      padding: 2px;
+      margin: 45px 0 0 50px;
+      a {
+        width: 50%;
+        float: left;
+        font-weight: 700;
+        font-size: 14px;
+        color: #1d2029;
+        padding: 3px 0;
+        text-decoration: none;
+        &.active {
+          background: #fff;
+          outline: none;
+          text-underline: none;
+        }
+      }
+    }
+  }
+  .top-date-range .date-range {
+    box-shadow: 0 5px 8px 0 rgba(132, 141, 168, 0.29);
+    margin: 40px 10px 10px;
+    input {
+      background: #fff;
+      height: 40px;
+      font-weight: 600;
+      color: #1d2029;
+    }
+  }
+}
+
+.wrap-content-empty-pages {
+  width: 135px;
+  height: 135px;
+  position: relative;
+  border-radius: 50%;
+  margin: auto;
+  background: #7e8aa2;
+  i {
+    font-size: 70px;
+    line-height: 135px;
+  }
+}
+
+.top-date-range {
+  overflow: inherit;
+}
+
+.view-date-datalabel {
+
+  text-align: left;
+  margin: 50px 0 20px 0;
+  a {
+    height: 40px;
+    background: #fff;
+    height: 40px;
+    font-weight: 600;
+    color: #1d2029;
+    box-shadow: 0 5px 8px 0 rgba(132, 141, 168, 0.29);
+    display: block;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    i {
+      margin-left: 20px;
+
+    }
+  }
+}
+
+.top-date-range {
+  display: none;
+}
+
+.pagination-table-user li {
+  &:first-child, &:last-child {
+    a:hover {
+      background: transparent;
+    }
+  }
+}
+
+.notification {
+  width: 300px;
+  background: #fff;
+  border-radius: 4px;
+  text-align: left;
+  @include position-center-horizontal;
+  top: 15px;
+  padding: 8px 10px;
+  i {
+    display: inline-block;
+    text-align: center;
+    float: none;
+    /* display: none; */
+    font-size: 25px;
+    vertical-align: middle;
+    color: blue;
+  }
+  p {
+    display: inline-block;
+    /* text-align: center; */
+    float: none;
+    font-size: 14px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+}
+
+.sheet-box-edit-log {
+  background: #fff;
+}
+
+.text-popup--padding {
+  padding: 15px 15px 0 15px;
+}
+
+.hidden-shadow {
+  box-shadow: none !important;
+}
+
+.hidden-important {
+  display: none !important;
+}
+
+.daily-log_list-log ul li.blur-box {
+  > * {
+    opacity: 0.5;
+  }
+}
+
+.content-tabs__events {
+  display: none;
+  clear: both;
+  float: none;
+  &.current {
+    display: block;
+  }
+}
+
+.list-top-header-log_events {
+  .list-top-header-log_events__tabs {
+    background: #f3f3f3;
+    border-radius:3px;
+    float: right;
+    overflow: hidden;
+    a{
+      display: inline-block;
+      padding:7px 15px;
+      font-weight: 800;
+      color: #1D2029;
+      text-align: center;
+      letter-spacing:1px;
+      font-size:12px;
+      text-decoration: none;
+      &.current{
+        background: #fed014;
+      }
+    }
+  }
+}
+.title-log-view.rq-pending{
+  display: inline-block;
+  text-align: center;
+  background: #dedede;
+  margin-bottom: 0;
+  padding:5px 10px;
+}
+.title-drive-content .title-view,.title-drive-content h2,.content-drive-active .tab-drive .tab-list a,.list-tabs .item a,.header-custom .subheader .tab-subheader ul .tab-item a,
+.table-content-driver .table-driver .tr-driver .td-driver,.view-date-datalabel a,.list-tabs .item a
+{
+  letter-spacing: 1px;
+}
+
+.table-dot-inspections{
+  width: 640px;
+  margin:0 auto;
+}
+.box-selected-range{
+  .box-date-range{
+    display: block;
+    width:100%;
+    clear: both;
+    overflow: hidden;
+    .view-date-datalabel{
+      float: left;
+      margin:0 20px 0 0;
+    }
+    .btn-download{
+      float: left;
+      background: #ffffff;
+      border-radius: 50px ;
+      width:35px;
+      height:35px;
+      line-height:35px;
+       box-shadow:0 5px 8px 0 rgba(132, 141, 168, 0.29);
+    }
+  }
+}
+.box-please-wait{
+  width: 100%;
+  clear: both;
+  text-align: center;
+  position: relative;
+  min-height:90vh;
+  .box-please-wait-inner{
+    top:50%;
+    margin-top:-165px;
+    overflow: hidden;
+    position: absolute;
+    width:100%;
+  }
+  .loader{
+    margin:30px auto;
+  }
+  &__texttop{
+    font-weight:700;
+    font-size:25px;
+  }
+  &__textbottom{
+    font-size:20px;
+  }
+  .croptop{
+    position: absolute;
+    width: 30px;
+    height: 14px;
+    background: #fed014;
+    top: 1px;
+    z-index: 3434;
+    display: block;
+    border-radius: 10px;
+    left: 74px;
+    transform: rotate(-7deg);
+
+  }
+}
+.box-success-report{
+  text-align: center;
+  padding:20px;
+  margin:100px 0 0 0;
+  .text-top{
+    font-size:25px;
+    font-weight:bold;
+    color: #58ce6c;
+    margin:0 0 20px 0;
+  }
+  .text-bottom{
+    font-size:25px;
+    margin:0 0 20px 0;
+  }
+  .btn-download{
+    background: #ffffff;
+    border-radius: 50px ;
+    width:35px;
+    height:35px;
+    line-height:35px;
+    box-shadow:0 5px 8px 0 rgba(132, 141, 168, 0.29);
+    display: inline-block;
+  }
+}
+@media (max-width: 1365px) {
+  .drive-details {
+    .col-xs-12.col-md-2, .col-xs-12.col-md-10 {
+      width: 100%;
+    }
+    .list-left-icon {
+      @include flex-center-center;
+      .icon-insert-top {
+        margin: 0 10px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .padding-inner {
+    padding: 0 20px;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    .content {
+      width: 100%;
+      margin-left: 0;
+      .content-white .content-white-child {
+        margin-top: 120px;
+      }
+    }
+    .header-drive {
+      .list-menu-icon {
+        display: block;
+        float: left;
+        padding-top: 14px;
+        font-size: 23px;
+        padding-left: 15px;
+      }
+    }
+  }
+  .sidebar-drive {
+
+    z-index: 999;
+    width: 100%;
+    top: 53px;
+    background-size: 100%;
+    z-index: 7676;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: ease-in-out 0.2s;
+    height: auto;
+    &.active {
+      transform: translateX(0);
+    }
+    .logo-drive {
+      display: none;
+    }
+    .menu-sidebar ul .active {
+      border: none;
+    }
+  }
+  .header-drive {
+    position: relative;
+    z-index: 9998989;
+  }
+}
+
+@media (max-width: 768px) {
+  .sheet-box-chart {
+    overflow-x: scroll;
+    -webkit-appearance: none;
+  }
+  .list-left-icon {
+    margin-top: 20px;
+  }
+  .drive-details .btn-has-icon.icon-left {
+    padding-left: 30px;
+    margin: 0 20px;
+    text-align: center;
+    width: auto;
+  }
+  .daily-log_list-log ul {
+    padding-left: 5px;
+  }
+  .content-logs-edit-right .everthing {
+    margin-bottom: 15px;
+  }
+  h2.title-header-sub {
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 0;
+  }
+  .content-drive-details .drive-details {
+    margin-top: 15px;
+    padding-top: 0;
+  }
+}

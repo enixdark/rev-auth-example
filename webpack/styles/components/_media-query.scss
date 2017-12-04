@@ -1,0 +1,507 @@
+@media (max-width: 1440px){
+// header
+  .btn-add-driver {
+    min-width: 125px;
+  }
+}
+@media (max-width: 1199px) {
+  //------------------------------------------------------------- header ---------------------------------------------{
+  .header-custom{
+    .subheader{
+      .name-page{
+        top: 15px;
+      }
+    }
+  }
+  .clear-sort {
+    margin-left:15px;
+  }
+  // account page css
+  .form-account {
+    width: 80%;
+  }
+  .account-setup .title-account-top h1 {
+    font-size: 25px;
+  }
+  // driver page css
+  .content-drive-active .tab-drive {
+    width:60%;
+  }
+  .table-content-driver {
+    overflow-x: auto;
+  }
+  // header page css
+  .title-drive-content-details .tab-list-header {
+    width:100%;
+  }
+  .header-datetime .header-icon-right .icon-pen {
+    margin-right:12px;
+  }
+  .title-drive-content {
+    padding:20px 15px;
+  }
+  // driver details page css
+  .header-icon-right{
+    .icon-pen {
+      margin-right: 10px;
+      @include flex-center-center;
+    }
+    i {
+      color: $black;
+      font-size: 20px;
+    }
+    .icon-prev-left {
+      float: left;
+      margin-right: 40px;
+    }
+  }
+  .icon-datetime-left {
+    left:-78px
+  }
+  // account profile css
+  .content-profile {
+    padding: 0 10px;
+    border:1px solid #f9f9f9;
+    .form-profile {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+  .logs-page{
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+}
+//@media (max-width: 1024px) {
+//  .table-content-driver{
+//    padding-right: 15px;
+//    padding-left: 15px;
+//  }
+//}
+@media (max-width: 991px) {
+  // header css
+  .search-sub-header {
+    margin-top:10px;
+  }
+  .title-drive-content-details .tab-list-header {
+    width:100%;
+    li {
+      padding:0 15px 20px 15px;
+    }
+  }
+  .btn-search {
+    top:10px;
+  }
+  .title-drive-content {
+   padding:20px 15px;
+    .title-view {
+      font-size: 11px;
+    }
+  }
+  // driver css page
+  .content-drive-active {
+    .tab-drive {
+      width:80%;
+    }
+  }
+  .trailer-no-title{
+    margin-top: 25px;
+  }
+  .title-location-detail.no-content{
+    display: none;
+  }
+  .list-left-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // details page
+  .icon-datetime-left {
+    left:-110px
+  }
+}
+@media (min-width: 768px){
+  .modal-dialog.popup-large{
+    width: 768px;
+    margin: 30px auto;
+  }
+}
+
+
+@media (max-width: 767px){
+  // -------------------------------------- custom-header -----------------------------------------------
+  .header-custom{
+    .subheader{
+      .name-page{
+        top: 15px;
+        padding-left: 10px;
+        span{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  // specific device
+  .specific-device{
+    margin-left: 26px;
+  }
+
+  /*setting profile css*/
+  .content-profile .form-profile {
+    padding: 30px 15px;
+  }
+  /*/login css*/
+  .form-login-drive {
+    .btn-continue {
+      height: 45px;
+    }
+  }
+  .login {
+    height: auto;
+  }
+  .error-title {
+    font-size: 13px;
+  }
+  .sign-in-free {
+    font-size: 14px;
+  }
+  .notification {
+    margin-top:45px;
+  }
+  /*button css*/
+  .btn-has-icon {
+    min-width:165px;
+  }
+  /*header css*/
+  .title-drive-content-details {
+    padding-bottom:0 !important;
+    .tab-list-header {
+      width: 100%;
+      padding-top:10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      li {
+        padding: 0px 0px 20px 15px;
+      }
+    }
+  }
+  .title-drive-content {
+    padding: 10px 10px 10px 5px;
+    margin-top:-8px;
+    .title-view {
+      margin-bottom: 10px;
+    }
+  }
+  .header {
+    position: relative;
+    top: 0;
+    width:100%;
+    z-index: 999;
+    .header-drive {
+      .list-menu-icon{
+        display: block;
+        float: left;
+        padding-top:14px;
+        font-size: 23px;
+        padding-left: 15px;
+      }
+    }
+  }
+  .header-drive ul .img-avatar-icon {
+    margin-top:-7px;
+  }
+  /*end driver page css*/
+  .content-drive-active {
+    display: block;
+    overflow: hidden;
+    .tab-drive{
+      width: 81%;
+      li{
+        font-size: 10px;
+      }
+    }
+  }
+  .icon-left-tab {
+    width:100%;
+  }
+  /*driver details css page*/
+  .content-drive-details .drive-details {
+    padding-left: 0;
+    padding-right:0;
+    .drive-details-right{
+      width: 100%;
+      margin-top:15px;
+      margin-left: 0;
+      h1{
+        padding-left: 15px;
+      }
+    }
+    .drive-details-left{
+      width: 100%;
+    }
+    .header-datetime{
+      .header-icon-right {
+        margin-top:10px;
+        .icon-pen {
+        }
+      }
+    }
+    .btn-submit-adddress {
+      padding:12px 10px;
+    }
+  }
+  .user-driver-details .content-user {
+    width: 90%;
+  }
+  .content-chart .content-details-right .on-off a {
+    width: 50%;
+  }
+  /*email sent css*/
+  .icon-next {
+    right: 6px;
+  }
+
+  /*driver css*/
+  .table-content-driver {
+    width: 100%;
+    .table-driver {
+      .tr-driver {
+        .td-driver {
+          .status-duty {
+            .status {
+              width: 100%;
+            }
+            .status-duty-icon strong {
+              right:30%;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*css logs edit css*/
+  .content-logs-edit {
+    width:100%;
+    padding:10px 20px;
+  }
+  .content-logs-edit-right .everthing{
+    .alerts-driver {
+      width:100%;
+    }
+    .logs-edit-right {
+      width:100%;
+      text-align: center;
+    }
+  }
+  .content {
+    width: 100%;
+    margin-left: 0;
+    .content-white .content-white-child {
+      margin-top:120px;
+    }
+  }
+
+  // -------------------------------------- log unidentified -----------------------------------------
+  .log-unidentified{
+    .main-content{
+      width: 100%;
+      .wrap-table{
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    }
+    .daily-log_list-log{
+      padding: 0 5px;
+      .log-item{
+        padding-right: 0;
+      }
+    }
+    .content-bottom{
+      .action{
+        @include flex-column-center;
+        .select-box{
+          width: 60%;
+          margin-bottom: 20px;
+          select{
+            min-width: initial;
+          }
+        }
+        .btn{
+          width: 60%;
+          min-width: initial;
+        }
+      }
+    }
+  }
+
+  // ---------------------------------------- setting-profile -------------------------------------------
+  .icon-lock-password{
+    .icon-lock{
+      font-size: 60px;
+    }
+  }
+
+  // ----------------------------------------user ------------------------------------------------
+  .modal-add-user{
+    .modal-header{
+      padding: 15px;
+      border-bottom: 1px solid #979797;;
+    }
+    .modal-body{
+      padding: 15px;
+      .title{
+        color: $text-color;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  .user-empty{
+    padding: 0 15px;
+    .logo-empty{
+      .image-empty{
+        width: 150px;
+        height: 150px;
+        .icon{
+          font-size: 100px;
+        }
+      }
+      .title-empty{
+        font-size: 25px;
+      }
+      .click-title{
+        font-size: 18px;
+      }
+    }
+  }
+  .active-table-logs{
+    width: 100%;
+    height: 80px;
+    .view-date-datalabel{
+      top: 35px;
+    }
+  }
+
+}
+
+@media (max-width: 575px) {
+  // specific device
+  .specific-device{
+    margin-left: 26px;
+  }
+  // logs css
+  .top-date-range {
+    width:100%;
+    .date-range {
+      width: 50%;
+    }
+  }
+  .form-date-logs{
+    width: 100%;
+    margin-top: 0;
+  }
+  .icon-date-logs{
+    display: none;
+  }
+  .clear-sort {
+    width:100%;
+    margin:0;
+  }
+// login css
+  .form-login-drive {
+    width: 90% !important;
+    padding:15px;
+    h1 {
+      margin:0;
+      font-size: 20px;
+    }
+    .form-group-drive {
+      input {
+        height: 34px;
+      }
+    }
+    .form-group-drive {
+      margin-top:0;
+    }
+  }
+  .forget-password{
+    font-size:14px;
+  }
+  .sign-in-free {
+    margin-top:5px;
+    a {
+      font-size:14px;
+    }
+  }
+  .notification{
+    width: 240px;
+    top: 90px;
+  }
+  //driver details css
+
+  .header-datetime{
+    padding: 0 5px;
+    .datetime-col-right{
+      padding-left: 5px;
+    }
+    .header-icon-right .icon-pen{
+      margin-right: 5px;
+    }
+  }
+  .icon-left-tab {
+    margin-top:10px;
+    padding:0 10px;
+  }
+  .content-drive-active .tab-drive {
+      width:100%;
+    .tab-list {
+      padding: 5px 6px;
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+  .icon-datetime-left {
+    left:-87px;
+  }
+  // email sent
+  .account-created {
+    .btn-sign-in {
+      width: 70%;
+    }
+  }
+  .account-created {
+    padding-bottom:40px;
+  }
+  // setting profile
+  .content-profile .form-profile {
+    width:100%;
+  }
+
+  .no-padding-horizontal-xs{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .status-duty .status{
+    padding: 4px 5px;
+  }
+
+  //------------------------------------------------- modal add user ----------------------------------------------------
+  .modal-add-user{
+   .modal-footer{
+     @include flex-column-center
+   }
+  }
+}
+
+
+
+
+
+
+
+

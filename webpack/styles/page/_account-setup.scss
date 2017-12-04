@@ -1,0 +1,57 @@
+.account-page {
+  background: $silver;
+  .header-logo-driver {
+    float: left;
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+  }
+}
+.account-setup {
+  text-align: center;
+  overflow: hidden;
+  border:1px solid $silver;
+  .title-account-top {
+    h1 {
+      font-size: 36px;
+      overflow: hidden;
+      margin:51px 0 56px 0;
+      padding-bottom: 4px;
+    }
+  }
+}
+.form-account {
+  border:1px solid $darkgray20;
+  width: 800px;
+  margin:0 auto;
+  text-align: left;
+  border-radius: 5px;
+  @include box-shadow;
+  .title-account {
+    border-bottom:1px solid $darkgray10;
+    padding: 24px 74px 28px 40px;
+    background: #f9f9f9;
+    p {
+      font-size: 18px;
+      font-weight: 600;
+      i {
+        font-size:20px;
+        padding-right:6px;
+      }
+    }
+  }
+  .content-account {
+    background: #fff;
+    padding-left:30px;
+    padding-right:30px;
+    p {
+      font-size: $number;
+      margin:20px 10px 6px 0px;
+    }
+  }
+}
+.account-footer {
+  background: $white;
+  padding-right:23px;
+}

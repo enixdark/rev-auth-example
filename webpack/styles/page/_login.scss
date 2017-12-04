@@ -1,0 +1,256 @@
+body {
+  background: $bg-drive;
+}
+.login {
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  &.create-account{
+    min-height: 200vh;
+  }
+  .header-logo-driver {
+    display: block;
+    overflow: hidden;
+    .logo-driver {
+      width: 191px;
+      img {
+        max-width:100%;
+      }
+    }
+    a {
+      float: left;
+      display: block;
+      overflow: hidden;
+      padding:10px;
+    }
+    .nav-login {
+      padding: 10px;
+      float: right;
+      li {
+        float: left;
+        list-style: none;
+        margin-left: 15px;
+        a {
+          text-decoration: none;
+          color: $bg-drive;
+          font-weight: bold;
+          padding-left:27px;
+          padding-right: 27px;
+          border-radius: 8px;
+          font-size: $number;
+          &:hover {
+            background: $yellow;
+            color: $text-color;
+            @include box-shadow;
+          }
+        }
+        .active {
+          background: $yellow;
+          color: $text-color;
+          @include box-shadow;
+        }
+      }
+    }
+  }
+}
+
+.form-login-drive {
+  text-align: center;
+  background: $white;
+  padding:49px 52px 38px 52px;
+  width:440px;
+  border-radius: 5px;
+  @include position-center;
+  .email {
+    font-size: $status;
+    font-weight:bold;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: $avatar;
+    margin:0 0 25px 0;
+    text-transform: uppercase;
+  }
+  .form-group-drive {
+    position: relative;
+    text-align: left;
+    margin-top:10px;
+    input {
+      height: 55px;
+      padding-right:40px;
+      border:1px solid $darkgray20;
+      border-radius: 3px;
+      font-size: 20px;
+      color: $text-color;
+      font-weight:600;
+    }
+  }
+}
+.btn-continue {
+  font-size: $number;
+  //background: $yellow;
+  font-weight: bold;
+  width: 100%;
+  border:none;
+  height: 55px;
+  margin-top:20px;
+  @include box-shadow;
+  &:hover {
+    opacity: 0.8;
+    background: $yellow;
+    color: $black;
+  }
+  &:active, &:focus, &:active:focus{
+    opacity: 0.8;
+    background: $yellow;
+    color: $black;
+  }
+}
+.forget-password {
+  font-weight: bold;
+  font-size: $number;
+  text-align: left;
+  margin-top:20px;
+  text-decoration: none;
+  display: block;
+  &:hover {
+    text-decoration: none;
+    color: $black;
+    opacity: 0.8;
+  }
+}
+.sign-in-free {
+  color: $text-color-opacity;
+  text-align: left;
+  font-size: $number;
+  margin-top: 20px;
+  a {
+    color: $text-color;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: $number;
+    &:hover {
+      text-decoration: none;
+      color: $text-color;
+      opacity: 0.8;
+    }
+  }
+}
+.copy-bottom {
+  margin-bottom: 20px;
+  color: $bg-drive;
+  font-weight: 400;
+  font-size: $mobile;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+}
+.icon-email {
+  right: 0;
+  text-align: center;
+  //padding-top:10px;
+  color: rgba(173,173,173,0.5);
+  //top: 30px;
+  font-size: 20px;
+}
+//.notification {
+//  display: flex;
+//  align-items: center;
+//  background: $white;
+//  padding:10px 10px 10px 15px;
+//  border-radius: 4px;
+//  font-weight:600;
+//  font-size: $status;
+//  color: $black;
+//  margin-top:10px;
+//  width: 358px;
+//  @include position-center-horizontal;
+//  @include box-shadow;
+//  .icon-notification {
+//    color: $blue;
+//    font-size: 22px;
+//    margin-right:10px;
+//  }
+//}
+.has-error {
+  color: #E74C3C;
+  input {
+    border:2px solid #E74C3C !important;
+  }
+  i {
+      color: $red;
+    }
+}
+.error-title{
+  text-align: left;
+  font-weight: 600;
+  font-size:$title;
+  margin-left: -5px;
+  margin-right: -5px;
+
+}
+.no-error-title {
+  visibility: hidden;
+}
+// email sent
+.email-address {
+  font-weight: bold;
+  font-size: $number;
+  text-align: left;
+  display: block;
+}
+.title-sent-email {
+  margin-bottom:15px !important;
+}
+// forgot password
+.tittle-forgot {
+  color: $text-color-opacity;
+  text-align: left;
+  font-size: $number;
+  display: inline-block;
+}
+
+// account created
+.account-created {
+  padding:49px 52px 116px 52px;
+  .btn-sign-in {
+    width: 266px;
+    margin-top: 33px;
+    padding: 10px 45px;
+    box-shadow: none;
+  }
+}
+.btn-sign-in {
+  border: 2px solid #FED014;
+  background: $white;
+  border-radius: 15px;
+  width: 100%;
+  font-weight: 700;
+  font-size: $sidebar;
+  border-radius: 30px;
+}
+.form-login-drive {
+  form {
+    position: relative;
+  }
+}
+.email-sent-1{
+  color: $black;
+  text-align: left;
+  font-weight: bold;
+  font-size: $number;
+}
+.icon-next  {
+  font-size: 26px;
+  padding-right: 35px;
+}
+// reset
+.btn-reset {
+  margin: 70px 0 16px 0;
+}

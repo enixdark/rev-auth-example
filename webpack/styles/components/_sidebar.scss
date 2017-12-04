@@ -1,0 +1,122 @@
+.sidebar-drive {
+  width: 255px;
+  height: 100vh;
+  float: left;
+  position: fixed;
+  background-color: $purple_coal;
+  @include box-shadow;
+  .logo-drive {
+    background-image: url('../images/logo-sidebar.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 170px;
+  }
+  .logo-footer-sidebar {
+    padding-bottom: 35px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    img{
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid $yellow;
+    }
+  }
+  .menu-sidebar {
+    ul {
+      padding: 0;
+      .active {
+        background: $white;
+        border-left: 5px solid $yellow;
+        color: $text-color;
+        padding-left:53px;
+        i {
+          color:$black;
+        }
+      }
+    }
+  }
+}
+.list-has-icon {
+  font-weight: bold;
+  font-size: $article;
+  color: $text-color;
+  position: relative;
+  padding:0;
+  list-style: none;
+  border-top: 1px solid #2f323e;
+  border-bottom: 1px solid #2f323e;
+  text-transform: uppercase;
+  cursor: pointer;
+  a{
+    padding: 13px 12px 10px 0;
+    display: block;
+    color: #525A74;
+  }
+  .icon-building-active{
+    display: none;
+  }
+  .icon-wheel-active{
+    display: none;
+  }
+  &:hover {
+    background: $white;
+    border-left: 5px solid $yellow;
+    padding-left: 10px;
+    color: $black;
+    transition: 0.5s;
+    i{
+      color: $black;
+    }
+    .icon-building-off{
+      display: none;
+    }
+    .icon-building-active{
+      display: block;
+    }
+    .icon-wheel-off{
+      display: none;
+    }
+    .icon-wheel-active{
+      display: block;
+    }
+
+  }
+  .icon {
+    color: $text-color;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 20px;
+  }
+  &.icon-left {
+    text-align: left;
+    padding-left: 62px;
+    .icon {
+      left: 20px;
+      color: #525A74;
+    }
+  }
+}
+.content {
+  margin-left: 255px;
+}
+.img-setting {
+  width: 43px;
+}
+
+.company-settings {
+  .icon {
+    left:4px !important;
+  }
+  &.icon-left {
+    padding-left: 68px !important;
+  }
+}
+.image-icon-left {
+  position: relative;
+  left:-8px;
+}
